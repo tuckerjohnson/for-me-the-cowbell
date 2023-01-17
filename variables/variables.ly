@@ -39,3 +39,43 @@ dtwo = \change Staff = "di2"
 
 U = \change Staff = "u"
 D = \change Staff = "d"
+
+
+buzzSymbol = \markup \path #0.25
+#(let ((x 3/6) (y 2/5))
+  `((moveto ,x ,(- y)) (lineto ,(- x) ,(- y))
+    (lineto ,x ,y) (lineto ,(- x) ,y)))
+
+applyBuzzSymbol = #(grob-transformer 'stencil
+  (lambda (grob orig)
+   (let ((dir (ly:grob-property grob 'direction))
+         (sten (grob-interpret-markup grob buzzSymbol)))
+    (ly:stencil-add orig
+	 (ly:stencil-translate-axis sten (* 0.1 dir) Y)))))
+
+applyBuzzuSymbol = #(grob-transformer 'stencil
+  (lambda (grob orig)
+   (let ((dir (ly:grob-property grob 'direction))
+         (sten (grob-interpret-markup grob buzzSymbol)))
+    (ly:stencil-add orig
+	 (ly:stencil-translate-axis sten (* 1.6 dir) Y)))))
+
+applyBuzzdSymbol = #(grob-transformer 'stencil
+  (lambda (grob orig)
+   (let ((dir (ly:grob-property grob 'direction))
+         (sten (grob-interpret-markup grob buzzSymbol)))
+    (ly:stencil-add orig
+	 (ly:stencil-translate-axis sten (* 1.6 dir) Y)))))
+
+applyBuzzddSymbol = #(grob-transformer 'stencil
+  (lambda (grob orig)
+   (let ((dir (ly:grob-property grob 'direction))
+         (sten (grob-interpret-markup grob buzzSymbol)))
+    (ly:stencil-add orig
+	 (ly:stencil-translate-axis sten (* 2.1 dir) Y)))))
+
+
+buzz = \tweak Stem.stencil \applyBuzzSymbol \etc
+buzzu = \tweak Stem.stencil \applyBuzzuSymbol \etc
+buzzd = \tweak Stem.stencil \applyBuzzdSymbol \etc
+buzzdd = \tweak Stem.stencil \applyBuzzddSymbol \etc
