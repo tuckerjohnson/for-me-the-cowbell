@@ -1,7 +1,7 @@
 %cowbell project
 %texts
 xtitle = \markup { ...for me, the cowbell... }
-xsub = \markup { for John McGovern }
+xsub = \markup { dedicated to John McGovern }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { solo percussion }
 xdur = \markup { \null }

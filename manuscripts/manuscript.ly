@@ -13,7 +13,7 @@
   \override Rest.staff-position = #0
   \clef percussion
   \time 4/4
-  \sectionLabel \markup { \box \concat { \sans "Recitative " \sans \bold "1" \sans "- Pastorale " \sans \bold "1" } }
+  \sectionLabel \markup { \box \concat { "Recitative & Pastorale" } }
   \tempo "Allegro moderato" 4=98
   \tuplet 5/4 { g8->\mf\>^\markup { \smaller \italic "cantabile; giusto" } g g g\pp g } r4 \tuplet 3/2 { b8(\< d8 f8)-+\mp } \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
   \tuplet 5/4 { g,8->\mf\> g g16\pp_+ } \override Staff.Beam.positions = #'(-4.6 . -4.6) r8[ r32 \buzz g'16.]~->\f\> \buzz g4 r16[ b,16-+\p r32 d16.]-+ \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
