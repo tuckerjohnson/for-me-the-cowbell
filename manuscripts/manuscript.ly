@@ -34,9 +34,9 @@
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
   \startStaff \grace { a,8(\f^\markup { \smaller \italic "espressivo; quasi chitarra" } b' } b'2) \grace { g8( g, } c,2)\> |
   \grace { d'8( f, } e''2) \grace { d8( e,, } e'2)\mp |
-  e'8.[-+\pp^\markup { \smaller \italic "secco; gocce di pioggia" } a,,,16_+] \tuplet 5/4 { r8 \grace { g'16( } f8)-+ b'16-+ } r4 \grace d,16( \tuplet 3/2 { e,16) 8_+ } r8 | r16 \grace c''16( e,16-+) b'8-+ r8 r16 c,,16_+ r4 r8 b'8_+ |
-  e,8_+ r8 r4 \tuplet 3/2 { r8 r8 f16[_+ e']_+ } r4 | d8[-+ c'8]-+ r4 e8-+ r8 r8 r16 \grace { a,16( a, b, b'' b, } a,16)_+ |
-  d8_+ r8 r4 \tuplet 3/2 { r8 c''8 r8 } r4 | r16 d,16[ a,8]
+  e'8.[\pp^\markup { \smaller \italic "secco; gocce di pioggia" } a,,,16] \tuplet 5/4 { r8 \grace { g'16( } f8) b'16 } r4 \grace d,16( \tuplet 3/2 { e,16) 8 } r8 | r16 \grace c''16( e,16) b'8 r8 r16 c,,16 r4 r8 b'8 |
+  e,8 r8 r4 \tuplet 3/2 { r8 r8 f16[ e'] } r4 | d8[ c'8] r4 e8 r8 r8 r16 \grace { a,16( a, b, b'' b, } a,16) |
+  d8 r8 r4 \tuplet 3/2 { r8 c''8 r8 } r4 | r16 d,16[ a,16. c32] \tuplet 5/4 { e''8 g,8 r16 } b16[ e,,8 b'16] \tuplet 3/2 { a8 f'8 r8 } |
 
 
 
@@ -47,6 +47,6 @@
   \Score
     \override RehearsalMark.break-visibility = #begin-of-line-invisible
     \override BarNumber.font-size = #1
-    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/22)
+    %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
 }
 }

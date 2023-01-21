@@ -10,10 +10,11 @@ front-matter = \markuplist {
 
    }
    \center-column {
-      \fill-line {
-	\column { \null }
-	\left-column {
-	  \line { \bold "Recitative & Pastorale" }
+     \vspace #5
+     \fill-line {
+       \column { \null }
+       \left-column {
+	 \line { \bold "Recitative & Pastorale" }
 	  \line { \bold "Duo 1 - Duo 2" }
 	  \line { \bold "Pastorale & Recitative" }
 	  \line { \bold "Duo 3 - Duo 4" }
@@ -26,13 +27,13 @@ front-matter = \markuplist {
         }
       \vspace #0.5
       \line { ================================= }
-      \vspace #1.5
+      \vspace #0.5
      \line { \hbracket \bold "program notes" }
       \vspace #0.2
       \xpnote
       \vspace #0.5
       \line { ================================= }
-      \vspace #1.5
+      \vspace #0.5
        }
   }
    \column { \null }
