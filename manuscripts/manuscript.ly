@@ -37,6 +37,10 @@
   e'8.[\pp^\markup { \smaller \italic "secco; gocce di pioggia" } a,,,16] \tuplet 5/4 { r8 \grace { g'16( } f8) b'16 } r4 \grace d,16( \tuplet 3/2 { e,16) 8 } r8 | r16 \grace c''16( e,16) b'8 r8 r16 c,,16 r4 r8 b'8 |
   e,8 r8 r4 \tuplet 3/2 { r8 r8 f16[ e'] } r4 | d8[ c'8] r4 e8 r8 r8 r16 \grace { a,16( a, b, b'' b, } a,16) |
   d8 r8 r4 \tuplet 3/2 { r8 c''8 r8 } r4 | r16 d,16[ a,16. c32] \tuplet 5/4 { e''8 g,8 r16 } b16[ e,,8 b'16] \tuplet 3/2 { a8 f'8 r8 } |
+  \tuplet 6/4 { a,16[ d d, b g'' c] } b8 r8 r16 e8. r4 | \grace { f,16( } c,4) r8 f8 r4 r16 c'8. |
+  e'8 r8 \tuplet 3/2 { r8 r8 f,8 } r2 | r16 e,8. r8 c16 b \tuplet 5/4 { d8[ b'8 \grace { c16( } b'16)] } \tuplet 5/4 { r16 d,8 c'16 a } |
+  b16 c
+
 
 
 
@@ -47,6 +51,6 @@
   \Score
     \override RehearsalMark.break-visibility = #begin-of-line-invisible
     \override BarNumber.font-size = #1
-    %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
+    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 }
 }
