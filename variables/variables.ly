@@ -26,8 +26,13 @@ lst = \once \override TextSpanner.bound-details.left.text = "st"
 rst = \once \override TextSpanner.bound-details.right.text = " st"
 lord = \once \override TextSpanner.bound-details.left.text = "ord"
 rord = \once \override TextSpanner.bound-details.right.text = " ord"
+rit = \once \override TextSpanner.bound-details.left.text = "ritardando"
+acepoc = \once \override TextSpanner.bound-details.left.text = "accelerando poco a poco"
 ffsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine
+#:transparent "f" #:normal-text #:italic "sempre" ) )
+psempre =
+    #(make-dynamic-script (markup #:combine #:transparent "f" "p" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )
 ppsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
