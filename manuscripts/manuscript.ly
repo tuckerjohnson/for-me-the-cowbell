@@ -48,7 +48,7 @@
   <c, c''>4 <e c''>8 d'8 <b d>4 |
   <b d>4.\> <e, d'>4. |
   \rit <c a''>4.\startTextSpan <g' a'>4. |
-  <g a'>4. f'4 <b, f'>8\mp\stopTextSpan \tempo "Meno Mosso" 4. = 90 |
+  <g a'>4. f'4 <b, f'>8\mp\stopTextSpan \tempo "Meno mosso" 4. = 90 |
   r4. r8 <e, f'>4 |
   f'4. <c, d'>4 8 |
   r4 <c d'>8 r8 <c c''>4 |
@@ -59,14 +59,49 @@
   <e f'>4.\< <g a'>4. |
   <g d'>4.\f <g c'>8 b4 |
   <b c'>4 <b f'>8 r8 <b a'>8 c,8 |
-  <c d'>4\< <c d'>8 <c f'> <c a''> <c c''>\stopTextSpan \mark \markup { \bracket \bold "II, III" } \bar "||" \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "III " } } }
+  <c d'>4\< <c d'>8 \stemDown <c f'> <c a''> <c c''>\stopTextSpan \mark \markup { \bracket \bold "II, III" } \bar "||" \bh
+  \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "III " } } }
   \tempo "Piu mosso" 4.=114
-  \startStaff <c c''>8\ff
-
-
-
-
-
+  \startStaff \stemNeutral <c c''>8\ff <c a''> <c d'> <c f'>8 4 |
+  <c c''>8\> e <e a'> r8 <e d'>4 |
+  4 b'8 <b f'>4. |
+  <b c'>4.\f <g f'> |
+  \rit 4.\>\startTextSpan r8 <g d'>4 |
+  r4 <g a'>8 r8 c,4 |
+  <c c''>4.\mp r8 <e c''>4\stopTextSpan \tempo "Meno mosso" 4. = 98 |
+  r4. r8 <b' d>4 |
+  r4. r8 <b f'>4 |
+  r4. <e, f'>8 a'4 |
+  r4 \acepoc <c,, a''>8\startTextSpan r8 a''4 |
+  r8 <g, a'>4 r4. |
+  <g f'>4. <b f'>4. |
+  <e, f'>4 d'8 <c, d'>4. |
+  <c d'>4 <b' d>8 r8\stopTextSpan \tempo "Piu mosso" 4. = 120 <g c'>4 |
+  <e c''>4 8 <g c'> <b c'> <c, c''>-+ \mark \markup { \center-column { \bracket \bold "I, II, III" \vspace #0.2 \line { \musicglyph "scripts.ufermata" }  } } \bar "||" \bh
+  \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "I " \line { "II " } \line { "III " } } }
+  \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
+  \sectionLabel \markup { \box \concat { "Pastorale & Recitative" } }
+  \time 2/2 \tempo "Adagio" 2=55
+  \startStaff R1 | R1 | R1 | R1 |
+  R1 | R1 | R1 | R1 |
+  R1 | R1 | R1 | R1 |
+  R1 | R1 | R1 | R1 \mark \markup { \bracket \bold "IV" } \bar "||" \bh
+  \override Staff.StaffSymbol.line-positions = #'(4.5 -4.5)
+  \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "IV " } }
+  \time 4/4 \tempo "Moderato" 4=98
+  \startStaff R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 \mark \markup { \bracket \bold "II, IV" } \bar "||" \bh
+  \time 6/8 \stopStaff
+  \sectionLabel \markup { \box \concat { "Second Processions" } }
+  \tempo "Con moto" 4.= 105
+  \override Staff.StaffSymbol.line-positions = #'(8 0 -8)
+  \startStaff r8^\markup { \smaller \italic "quasi semantron; l.v." }
 
 
    }

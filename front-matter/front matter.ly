@@ -15,11 +15,11 @@ front-matter = \markuplist {
        \column { \null }
        \left-column {
 	 \line { \bold "Recitative & Pastorale" }
-	  \line { \bold "Processions" }
+	 \line { \bold "First Processions" }
 	  \line { \bold "Pastorale & Recitative" }
-	  \line { \bold "Processions" }
+	  \line { \bold "Second Processions" }
 	  \line { \bold "Pastorale & Recitative" }
-	  \line { \bold "Processions" }
+	  \line { \bold "Third Processions" }
 	  \line { \bold "Recitative & Pastorale" }
 	  \line { \bold "Landlichen Funktion - Strukture" }
 	}
