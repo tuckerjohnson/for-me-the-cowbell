@@ -28,7 +28,7 @@
   d4\< b f'\f g,\mp\fermata \mark \markup { \bracket \bold "II, III, IV" } \bar "||"
   \bh \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "III " } \line { "IV " } } }
   \time 2/2 \stopStaff
-  \tempo "Adagio" 2=55
+  \tempo "Adagio" 2=40
   \revert Rest.staff-position
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
   \startStaff \grace { a,8(\f^\markup { \smaller \italic "espressivo; quasi chitarra" } b' } b'2) \grace { g8( g, } c,2)\> | \grace { d'8( f, } e''2) \grace { d8( e,, } e'2)\mp |
