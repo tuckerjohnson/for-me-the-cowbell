@@ -31,8 +31,10 @@
   \tempo "Adagio" 2=40
   \revert Rest.staff-position
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
-  \startStaff \grace { a,8(\f^\markup { \smaller \italic "espressivo; quasi chitarra" } b' } b'2) \grace { g8( g, } c,2)\> | \grace { d'8( f, } e''2) \grace { d8( e,, } e'2)\mp |
-  e'8.[^\markup { \smaller \italic "gocce di pioggia" } a,,,16]\psempre \tuplet 5/4 { r8 \grace { g'16( } f8)[ b'16] } r4 \grace d,16( \tuplet 3/2 { e,16) 8 } r8 | r16 \grace c''16( e,16) b'8 r8 r16 c,,16 r4 r8 b'8 |
+  \startStaff \grace { a,8(\f^\markup { \smaller \italic "espressivo; quasi chitarra" } b' } b'2) \grace { g8( g, } c,2)\> |
+  \grace { d'8( f, } e''2) \grace { d8( e,, } e'2)\mp |
+  e'8.[^\markup { \smaller \italic "gocce di pioggia" } a,,,16]\psempre \tuplet 5/4 { r8 \grace { g'16( } f8)[ b'16] } r4 \grace d,16( \tuplet 3/2 { e,16) 8 } r8 |
+  r16 \grace c''16( e,16) b'8 r8 r16 c,,16 r4 r8 b'8 |
   e,8 r8 r4 \tuplet 3/2 { r8 r8 f16[ e'] } r4 | d8[ c'8] r4 e8[ r8] r8 r16 \grace { a,16( a, b, b'' b, } a,16) |
   d8 r8 r4 \tuplet 3/2 { r8 c''8 r8 } r4 | r16 d,16[ a,16. c32] \tuplet 5/4 { e''8 g,8 r16 } b16[ e,,8 b'16] \tuplet 3/2 { a8 f'8 r8 } |
   \tuplet 6/4 { a,16[ d d, b g'' c] } b8[ r8] r16[ e8.] r4 | \grace { f,16( } c,4) r8 f8 r4 r16 c'8. |
@@ -44,22 +46,22 @@
   \sectionLabel \markup { \box \concat { "First Processions" } }
   \tempo "Con moto" 4.=105
   \override Staff.StaffSymbol.line-positions = #'(8 0 -8)
-  \startStaff <c,, c''>8\f^\markup { \smaller \italic "quasi semantron; l.v." } <e c''> <b' c'> <g c'> <g c'>4 | %1
-  <c, c''>4 <e c''>8 d'8 <b d>4 |
-  <b d>4.\> <e, d'>4. |
-  \rit <c a''>4.\startTextSpan <g' a'>4. |
-  <g a'>4. f'4 <b, f'>8\mp\stopTextSpan \tempo "Meno mosso" 4. = 90 |
-  r4. r8 <e, f'>4 |
-  f'4. <c, d'>4 8 |
-  r4 <c d'>8 r8 <c c''>4 |
+  \startStaff <c,, c''>8\f^\markup { \smaller \italic "quasi semantron; l.v." } <e c''> <g c'> <b c'> <b c'>4 | %1
+  <g c'>4 <e c''>8 d'8 <c, d'>4 |
+  <c d'>4.\> <b' d>4. |
+  \rit <e, a'>4.\startTextSpan <g a'>4. |
+  <g a'>4. f'4 <c, f'>8\mp\stopTextSpan \tempo "Meno mosso" 4. = 90 |
+  r4. r8 <b' f'>4 |
+  f'4. <e, d'>4 8 |
+  r4 <e d'>8 r8 <e c''>4 |
   r4 b'8 <b a'>4. |
-  r4 \acepoc <g a'>8\startTextSpan r4. |
-   <g c'>4\mf e8 r8 <e d'>4 |
-  r4 <e f'>8 r4. |
-  <e f'>4.\< <g a'>4. |
-  <g d'>4.\f <g c'>8 b4 |
+  r4 \acepoc <c, a''>8\startTextSpan r4. |
+   <c c''>4\mf g'8 r8 <g d'>4 |
+  r4 <g f'>8 r4. |
+  <g f'>4.\< <e a'>4. |
+  <e d'>4.\f <e c'>8 b'4 |
   <b c'>4 <b f'>8 r8 <b a'>8 c,8 |
-  <c d'>4\< <c d'>8 \stemDown <c f'> <c a''> <c c''>\stopTextSpan \mark \markup { \bracket \bold "II, III" } \bar "||" \bh
+  <c d'>4\< <c d'>8 \stemDown <c a''> <c f'> <c c''>\stopTextSpan \mark \markup { \bracket \bold "II, III" } \bar "||" \bh
   \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "III " } } }
   \tempo "Piu mosso" 4.=114
   \startStaff \stemNeutral <c c''>8\ff <c a''> <c d'> <c f'>8 4 |
@@ -81,11 +83,25 @@
   \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "I " \line { "II " } \line { "III " } } }
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
   \sectionLabel \markup { \box \concat { "Pastorale & Recitative" } }
-  \time 2/2 \tempo "Adagio" 2=55
-  \startStaff R1 | R1 | R1 | R1 |
-  R1 | R1 | R1 | R1 |
-  R1 | R1 | R1 | R1 |
-  R1 | R1 | R1 | R1 \mark \markup { \bracket \bold "IV" } \bar "||" \bh
+  \time 2/2 \tempo "Adagio" 2=40
+  \startStaff
+  r8^\markup { \smaller \italic "gocce di pioggia" } a8\psempre r4 a'8 r8 r4 |%1
+  r8. g'16 r4 \tuplet 3/2 { \tuplet 3/2 { f8[ d8 b8] } \tuplet 3/2 { b,8[ d8 f8] } \tuplet 3/2 { c''8[ e8 b8] } } |
+  r16 \grace { a,,16( } f'8.) r4 \grace { a16( } e''8) r8 r4 |%2
+  \tuplet 3/2 { r8 r8 e,8 } r8 g8 r8 b16 a,,16 c[ d' c' b,] |
+  \tuplet 5/4 { r16 c16 a,8 c''16 } r16 \grace { g,16^( } b'16) a8 \grace { c,,16( }\tuplet 3/2 { b'16) d,8 } e'8 r4 |%3
+  e'8 r8 r4 r8. e,,16 r4 |
+  \grace { b16( f''16 } e,8) r8 r4 r4 \tuplet 3/2 { r8 b''8 b, } |%4
+  r4 r16 e'8. r4 \tuplet 6/4 { a,,16 a, d d' d' g, } |
+  R1 |%5
+  R1 |
+  R1 |%6
+  R1 |
+  R1 |%7
+  R1 |
+  R1 |%8
+  R1
+  \mark \markup { \bracket \bold "IV" } \bar "||" \bh
   \override Staff.StaffSymbol.line-positions = #'(4.5 -4.5)
   \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "IV " } }
   \time 4/4 \tempo "Moderato" 4=98
