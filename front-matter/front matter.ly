@@ -21,7 +21,7 @@ front-matter = \markuplist {
 	  \line { \bold "Pastorale & Recitative" }
 	  \line { \bold "Third Processions" }
 	  \line { \bold "Recitative & Pastorale" }
-	  \line { \bold "Landlichen Funktion - Strukture" }
+	  \line { \bold "Landlichen Funktion & Strukture" }
 	}
 	\column { \null }
         }
