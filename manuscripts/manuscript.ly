@@ -17,17 +17,26 @@
   %A
   \sectionLabel \markup { \box \concat { "Recitative & Pastorale" } }
   \tempo 4=98
-  \tuplet 5/4 { g8->\mf\>^\markup { \smaller \italic "cantabile" } g g g\pp g } r4 \tuplet 3/2 { b8(\< d8 f8)-+\mp } \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  \tuplet 5/4 { g,8->\mf\> g g16\pp_+ } \override Staff.Beam.positions = #'(-4.6 . -4.6) r8[ r32 g'16.]:64~->\f\> g4:32 r16[ b,16-+\p r32 d16.]-+ \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  \revert Staff.Beam.positions \once \override TupletNumber.text = #(tuplet-number::fraction-with-notes (ly:make-duration 4 ) (ly:make-duration 4))
-  \tuplet 6/5 { a8[(\<  c8 e8] } g8.:32~ g4:32~\fp g4:32) \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  b,8.\mf\> 16~ 8 16-+\p f'16->\f\> \tuplet 3/2 { 8-> 8 8 } \tuplet 3/2 { 8 16_+\pp } f,16_+ d'16_+ \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  f,8[(\< f' b,] c8:32~\mp c2:32) \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  e32(\f c32 b8.:32~\> b4:32) b32[(\p g32)] r16 r8 r4 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \tuplet 5/4 { g8->\mf\>^\markup { \smaller \italic "cantabile" } g g g\pp g } r4 \tuplet 3/2 { b8(\< d8 f8)-+\mp }
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \tuplet 5/4 { g,8->\mf\> g g16\pp_+ } \override Staff.Beam.positions = #'(-4.6 . -4.6) r8[ r32 g'16.]:64~->\f\> g4:32 r16[ b,16-+\p r32 d16.]-+
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
   \revert Staff.Beam.positions
-  b8.\mf\> 16~ 8 16-+\p f'\f r8 g,8_+\p r16 d'8.\mf \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \once \override TupletNumber.text = #(tuplet-number::fraction-with-notes (ly:make-duration 4 ) (ly:make-duration 4))
+  \tuplet 6/5 { a8[(\<  c8 e8] } g8.:32~ g4:32~\fp g4:32)
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  b,8.\mf\> 16~ 8 16-+\p f'16->\f\> \tuplet 3/2 { 8-> 8 8 } \tuplet 3/2 { 8 16_+\pp } f,16_+ d'16_+
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  f,8[(\< f' b,] c8:32~\mp c2:32)
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  e32(\f c32 b8.:32~\> b4:32) b32[(\p g32)] r16 r8 r4
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
   \revert Staff.Beam.positions
-  d4:32\< b:32 f':32\f g,:32\mp\fermata \mark \markup { \bracket \bold "II, III, IV" } \bar "||"
+  b8.\mf\> 16~ 8 16-+\p f'\f r8 g,8_+\p r16 d'8.\mf
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \revert Staff.Beam.positions
+  d4:32\< b:32 f':32\f g,:32\mp\fermata
+  \mark \markup { \bracket \bold "II, III, IV" } \bar "||"
   \bh \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "III " } \line { "IV " } } }
   \time 2/2 \stopStaff
   \tempo 2=40
@@ -49,7 +58,7 @@
   %B
   \sectionLabel \markup { \box \concat { "First Processions" } }
   \tempo 4.=105
-  \override Staff.StaffSymbol.line-positions = #'(8 0 -8)
+  \override Staff.StaffSymbol.line-positions = #'(-8 0 8)
   \startStaff <c,, c''>8\f^\markup { \smaller \italic "quasi semantron; l.v." } <e c''> <g c'> <b c'> <b c'>4 | %1
   <g c'>4 <e c''>8 d'8 <c, d'>4 |
   <c d'>4.\> <b' d>4. |
@@ -63,7 +72,7 @@
    <c c''>4\mf g'8 r8 <g d'>4 |
   r4 <g f'>8 r4. |
   <g f'>4.\< <e a'>4. |
-  <e d'>4.\f <e c'>8 b'4 |
+  <e d'>4.\f <e d'>8 b'4 |
   <b c'>4 <b f'>8 r8 <b a'>8 c,8 |
   <c d'>4\< <c d'>8 \stemDown <c a''> <c f'> <c c''>\stopTextSpan \mark \markup { \bracket \bold "II, III" } \bar "||" \bh
   \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "III " } } }
@@ -134,7 +143,7 @@
   \sectionLabel \markup { \box \concat { "Second Processions" } }
   \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "IV " } } }
   \tempo 4.= 105
-  \override Staff.StaffSymbol.line-positions = #'(8 0 -8)
+  \override Staff.StaffSymbol.line-positions = #'(-8 0 8)
   \startStaff <b d>8\f^\markup { \smaller \italic "quasi semantron; l.v." } <b f'> <b a'> <b c'> <b c'>4 | %1
   <b a'>4 <b f'>8 g <g d'>4 |%2
   <g d'>4.\> <g c'>4. |%3
@@ -204,15 +213,22 @@
   \time 4/4 \tempo 4=98
   \startStaff
   \relative c {
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1
-  \mark \markup { \bracket \bold "III, IV" } \bar "||" \bh
+    b'4:32\mp\< f'4:32 d4:32\f\> g,4:32\p
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    f'32->\mf 8.. r16 d16-> d8 g,16-> b32-> b32~ 8 r4
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    b4:32~ \p\< 4:32~\f\> 8:32\p r16 g16->\mp g8.:32 d'32( f)
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    \tuplet 5/4 { d8-+\f 16-+ 8-+ } \tuplet 5/4 { 16-+ 16-+ 8-+ 16-+ } r8 b8:32(\> g8:32 f'8:32)\p
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    g,16\f( d' f8-+) \tuplet 6/4 { 16\> 16 16 16 8-+ } \tuplet 6/4 { r16 f16 8-+ 16 16 } \tuplet 3/2 { 16-+\p b,8:32~\< } 8:32\!
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    f'4:32~\pp \tuplet 3/2 { 4:32 8:32~->\ff } 8.:32 g,16-+\mf\< 16-> b_+ b-> d->\!
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    d-+\< d-> b-> g-+ \tuplet 3/2 { 4->\ff 8:32~\pp } 4:32 f'4:32\mp\>\!
+    \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+    \tuplet 3/2 { b,8(\< f' d } g,4->)\f r2
+    \mark \markup { \bracket \bold "III, IV" } \bar "||" \bh
   }
   \time 6/8 \stopStaff
 
@@ -221,7 +237,7 @@
   \sectionLabel \markup { \box \concat { "Third Processions" } }
   \set Staff.shortInstrumentName = \markup { \bold \right-column { "III " \line { "IV " } } }
   \tempo 4.= 105
-  \override Staff.StaffSymbol.line-positions = #'(8 0 -8)
+  \override Staff.StaffSymbol.line-positions = #'(-8 0 8)
   \startStaff
   <c c''>8\f^\markup { \smaller \italic "quasi semantron; l.v." } <e c''> <g c'> <b c'> <b c'>4 | %1
   <g c'>4 <e f'>8 r8 <c f'>4 |%2
@@ -259,7 +275,7 @@
   <g' a'>4. <b a'>8 f'4 |
   <b, f'>4 <c, f'>8 r8\stopTextSpan \tempo 4. = 120 <e f'>8 c''8 |
   <g, c'>4 <g c'>8 <e c''> <c c''> <b' b'>-+
-  \mark \markup { \center-column { \bracket \bold "II" \vspace #0.2 \line { \musicglyph "scripts.ufermata" }  } }
+  \mark \markup { \center-column { \bracket \bold "I" \vspace #0.2 \line { \musicglyph "scripts.ufermata" }  } }
   \bar "||" \bh
   \stopStaff
 }
@@ -269,15 +285,26 @@
   \sectionLabel \markup { \box \concat { "Recitative & Pastorale" } }
   \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "III " } }
   \time 4/4 \tempo 4=98
-  \startStaff \relative c
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1 \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
-  R1
+  \startStaff
+  \relative c
+  g'8->\f\> 8~ 16 8. 4:32(\p\< \tuplet 3/2 { f'8 d b)\mf }
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  g16(\ff f'8.:32~\p 4:32~ 4:32) r16 d8-+ b16-+
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \once \override TupletNumber.text = #(tuplet-number::fraction-with-notes (ly:make-duration 4 ) (ly:make-duration 4))
+  \tuplet 6/5 { d8[(\< g,8 b8] } f'8.:32~\fp\< 4:32~ 4:32)\>\!
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  f4:32~(\pp 8.:32 b,16:32~ 4:32~ 8:32\< g16\f d') |
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  g,8[(\pp\< b f'] d8:32~\mp d2:32)
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  d32(\mf f b,8.) r4 r4 r8 g8_+\ff |
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \revert Staff.Beam.positions
+  b8.\mf\> 16~ 8 16_+\p d\f r8. f16-+\p r16 g,8.\mf
+  \mark \markup { \small \musicglyph "scripts.ushortfermata" } |
+  \revert Staff.Beam.positions
+  g4:32\< f':32 d:32\f b:32\mp\fermata
   \mark \markup { \bracket \bold "I, III, IV" } \bar "||" \bh
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
@@ -300,16 +327,59 @@
   R1 |
   R1 |%8
   R1
-  \mark \markup { \bracket \bold "III, IV" } \bar "||" \bh
+  \mark \markup { \bracket \bold "I, II, III, IV" } \bar "||" \bh
 
+  \override Staff.StaffSymbol.line-positions = #'(-16 -8 0 8 16)
+  %\override Staff.StaffSymbol.line-positions = #'(-16 -8 0 8 16)
+  \stopStaff \set Staff.shortInstrumentName = \markup {
+    \bold \right-column {
+      "I "
+      \vspace #0.4
+      \line { "II " }
+      \vspace #0.4
+      \line { "III " }
+      \vspace #0.4
+      \line { "IV " }
+    }
+  }
+  \sectionLabel \markup { \box \concat { "Landlichen Funktion - Strukture" } }
+  \cadenzaOn
+  \startStaff
+  \relative c' {
+    \override NoteHead.style = #'cross
+    r4\fermata c4^"flip toy" r4\fermata \bar "||"
+    \revert NoteHead.style
+  }
+  \cadenzaOff
+  \time 6/8
+  \relative c' {
+    \tempo 4.=114
+    r4 e'8\mp c,,16 b,8. d''8 |
+    f,,16\ff g' d''' f,, e, b''' a, a,, b' c' g' d,,, |
+    b''\> a, d'''8. d,,16 c,8\mf b,16 d'''' c,8 |
+    r16\> f,16 b,,,8 b''''16 g,,16 a'8 f,,16 e'' g'8\mp |
+    b16\ff f,,,16 d''16 e'16 c,,16 d,16 f''16 g'16 g,, a'16 c,,16 b,16  |
+    a'8.\mf\> c''8. d'8 b,,4\p |
+    r4. r4. |
+    r4. r4. |
+    r4. r4. |
+    r4. r4. |
+    r4. r4. |
+    r4. r4. |
+    \time 2/4
+    r4 r4 |
+    \time 6/8
+    r4. r4. |
+    r4. r4. \bar "|."
+  }
 
-   }
+}
 %\midi { }
 \layout {
 \context {
   \Score
     \override RehearsalMark.break-visibility = #begin-of-line-invisible
     \override BarNumber.font-size = #1
-    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)
 }
 }
