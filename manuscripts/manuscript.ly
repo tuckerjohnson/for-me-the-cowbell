@@ -327,12 +327,16 @@
   R1 |
   R1 |%8
   R1
-  \mark \markup { \bracket \bold "I, II, III, IV" } \bar "||" \bh
+   \mark \markup {
+    \bold \bracket \center-column {
+      \line {  "I, II, III, IV," }
+      \vspace #0.1
+      \line { "Moo Box" }
+    }
+  } \bar "||" \bh
 
-  \override Staff.StaffSymbol.line-positions = #'(-16 -8 0 8 16)
-  %\override Staff.StaffSymbol.line-positions = #'(-16 -8 0 8 16)
-  \stopStaff \set Staff.shortInstrumentName = \markup {
-    \bold \right-column {
+  \set Staff.shortInstrumentName = \markup {
+     \bold \right-column {
       "I "
       \vspace #0.4
       \line { "II " }
@@ -342,35 +346,41 @@
       \line { "IV " }
     }
   }
+  \stopStaff \override Staff.StaffSymbol.line-positions = #'(-16 -8 0 8 16)
   \sectionLabel \markup { \box \concat { "Landlichen Funktion - Strukture" } }
   \cadenzaOn
   \startStaff
   \relative c' {
-    \override NoteHead.style = #'cross
-    r4\fermata c4^"flip toy" r4\fermata \bar "||"
-    \revert NoteHead.style
+    \override NoteHead.no-ledgers = ##f
+    r4^\markup { \smaller \italic "nervoso" }^\markup { \box "Moo Box" }\fermata g'''2\turn r4\fermata \bar "||"
+    \override NoteHead.no-ledgers = ##t
   }
   \cadenzaOff
   \time 6/8
   \relative c' {
     \tempo 4.=114
-    r4 e'8\mp c,,16 b,8. d''8 |
+    r4^\markup { \smaller \italic "ritmico" } e'8\mp c,,16 b,8. d''8 |
     f,,16\ff g' d''' f,, e, b''' a, a,, b' c' g' d,,, |
     b''\> a, d'''8. d,,16 c,8\mf b,16 d'''' c,8 |
     r16\> f,16 b,,,8 b''''16 g,,16 a'8 f,,16 e'' g'8\mp |
     b16\ff f,,,16 d''16 e'16 c,,16 d,16 f''16 g'16 g,, a'16 c,,16 b,16  |
     a'8.\mf\> c''8. d'8 b,,4\p |
-    r4. r4. |
-    r4. r4. |
-    r4. r4. |
-    r4. r4. |
-    r4. r4. |
-    r4. r4. |
-    \time 2/4
-    r4 r4 |
-    \time 6/8
-    r4. r4. |
-    r4. r4. \bar "|."
+    b8\< d''8 f,,16 d,,\mp r16 e'16\p\< g''8 c,16 a,,16\mf  |
+    r8 a''8\p\< d'16 f,,, g' d' e' b,,, c'8 |
+    e'16\ff d, e, g'' a,,, d''' c, c,, b, d f'' b, |
+    f,4\> r16 g'''16 g,,4 r16 a'16 |
+    g,8.\p b''8. a,,,16\f\> c'' b, d'' f,,,, a''\mp |
+    r16 f16\f g'8 e,, b,16\> c' d' e' d,,,8\mp \bar "||"
+    \cadenzaOn
+    \override NoteHead.no-ledgers = ##f
+    r8^\markup { \smaller \italic "sicuro di sé" } g''''4~\turn 4.\fermata
+    \override NoteHead.no-ledgers = ##t
+    \bar "||"
+    \cadenzaOff
+    \tempo 2. = 40
+    \time 6/4
+    e,4\mp^\markup { \smaller \italic "sonore" } <b,,, c'>2:32 r8 a'''8 <f,, g'>2:32 |
+    <a e' f' d''>4.:32(\fermata 8[)-+ c''16 d,\< <d,, g'''>8:32~(] 4.:32~\>\fermata 8:32[ 16])_+\p r16 b''8_+  \bar "|."
   }
 
 }
