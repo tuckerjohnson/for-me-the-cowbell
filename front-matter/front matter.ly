@@ -14,27 +14,45 @@ front-matter = \markuplist {
      \fill-line {
        \column { \null }
        \left-column {
-	 \line { \bold "Recitative & Pastorale" }
-	 \line { \bold "First Processions" }
-	  \line { \bold "Pastorale & Recitative" }
-	  \line { \bold "Second Processions" }
-	  \line { \bold "Pastorale & Recitative" }
-	  \line { \bold "Third Processions" }
-	  \line { \bold "Recitative & Pastorale" }
-	  \line { \bold "Landlichen Funktion & Strukture" }
+	 \line { "rezitativ und pastorale" }
+	 \line { "prozessionen I" }
+	  \line { "pastorale und rezitativ" }
+	  \line { "prozessionen II" }
+	  \line { "pastorale und rezitativ" }
+	  \line { "prozessionen III" }
+	  \line { "rezitativ und pastorale" }
+	  \line { "ländlichen funktion und struktur" }
 	}
 	\column { \null }
         }
-      \vspace #0.5
+      \vspace #0.7
       \line { ================================= }
       \vspace #0.5
-     \line { \hbracket \bold "program notes" }
+      \line { \hbracket \bold "program note" }
       \vspace #0.2
       \xpnote
-      \vspace #0.5
+      \vspace #1
       \line { ================================= }
       \vspace #0.5
-       }
+      \line { \hbracket \bold "performance note" }
+      \vspace #0.2
+      \fill-line {
+	\column { \null }
+	\left-column {
+	  \override #'(line-width . 90) \justify {
+	    \bold \italic "...for me..." requires sixteen cowbells or similar bell instruments and a Cow Box toy, which is turned to produce a cow-like sound.
+	    The performer is asked to organize these bells into four discreet groups of at least four bells each.
+	    Organization should be based on the performers sense, and does not require the four groups to sound identifiable, but that would be a way to organize them.
+	    Groups I-IV will corespond to the staff numbering in the score.
+	    Notehead locations within the number staves are to be interpreted as high and lower bells within their respenctive group, outlining the contours to be played n each group.
+
+	  }
+	  \vspace #1
+	  \line { \small \musicglyph "scripts.ushortfermata" " - a very short pause, meant to break up the continuous pulse but not to have any significant duration."}
+	}
+	\column { \null }
+      }
+    }
   }
    \column { \null }
   }

@@ -19,7 +19,7 @@
       \concat { \if \on-page #6 \evfoot }
       \concat { \if \on-page #8 \evfoot }
       \concat { \if \on-page #10 \evfoot }
-      \concat { \if \on-page #12 \null }
+      \concat { \if \on-page #12 \evfoot }
       \concat { \if \on-page #14 \null }
           }
 #(set-paper-size "letter")
