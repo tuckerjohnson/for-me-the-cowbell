@@ -39,16 +39,20 @@ front-matter = \markuplist {
       \fill-line {
 	\column { \null }
 	\left-column {
-	  \override #'(line-width . 90) \justify {
+	  \override #'(line-width . 100) \justify {
 	    \bold \italic "...for me..." requires sixteen cowbells or similar bell instruments and a Cow Box toy, which is turned to produce a cow-like sound.
 	    The performer is asked to organize these bells into four discreet groups of at least four bells each.
 	    Organization should be based on the performers sense, and does not require the four groups to sound identifiable, but that would be a way to organize them.
+	  }
+	  \vspace #1
+	  \override #'(line-width . 100) \justify {
 	    Groups I-IV will corespond to the staff numbering in the score.
 	    Notehead locations within the number staves are to be interpreted as high and lower bells within their respenctive group, outlining the contours to be played n each group.
-
 	  }
 	  \vspace #1
 	  \line { \small \musicglyph "scripts.ushortfermata" " - a very short pause, meant to break up the continuous pulse but not to have any significant duration."}
+	  \vspace #1
+	  \line { \small \musicglyph "scripts.turn" " - turn the Cow Box to produce a cow-like sound."}
 	}
 	\column { \null }
       }
