@@ -15,7 +15,7 @@
   \time 4/4
 
   %A
-  \sectionLabel \markup { \box \concat { "rezitativ und pastorale" } }
+  \sectionLabel \markup { \box \concat { "Rezitativ und Pastorale" } }
   \tempo 4=98
   \tuplet 5/4 { g8->\mf\>^\markup { \smaller \italic "cantabile" } g g g\pp g } r4 \tuplet 3/2 { b8(\< d8 f8)-+\mp }
   \mark \markup { \small \musicglyph "scripts.ushortfermata" } \bar "."
@@ -56,7 +56,7 @@
   \time 6/8 \stopStaff
 
   %B
-  \sectionLabel \markup { \box \concat { "prozessionen I" } }
+  \sectionLabel \markup { \box \concat { "Prozessionen I" } }
   \tempo 4.=105
   \override Staff.StaffSymbol.line-positions = #'(-8 0 8)
   \startStaff <c,, c''>8\f^\markup { \smaller \italic "quasi semantron; l.v." } <e c''> <g c'> <b c'> <b c'>4 | %1
@@ -97,7 +97,7 @@
 
   %C
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
-  \sectionLabel \markup { \box \concat { "pastorale und rezitativ" } }
+  \sectionLabel \markup { \box \concat { "Pastorale und Rezitativ" } }
   \time 2/2 \tempo 2=40
   \startStaff
   r8^\markup { \smaller \italic "gocce di pioggia" } a8\psempre r4 a'8 r8 r4 |%1
@@ -140,7 +140,7 @@
   \time 6/8 \stopStaff
 
   %D
-  \sectionLabel \markup { \box \concat { "prozessionen II" } }
+  \sectionLabel \markup { \box \concat { "Prozessionen II" } }
   \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " \line { "IV " } } }
   \tempo 4.= 105
   \override Staff.StaffSymbol.line-positions = #'(-8 0 8)
@@ -186,7 +186,7 @@
   %E
   \override Staff.StaffSymbol.line-positions = #'(9.75 3.5 -3.5 -9.75)
   \set Staff.shortInstrumentName = \markup { \bold \right-column { "I " \line { "II " } \line { "IV " } } }
-  \sectionLabel \markup { \box \concat { "pastorale und Rezitativ" } }
+  \sectionLabel \markup { \box \concat { "Pastorale und Rezitativ" } }
   \time 2/2 \tempo 2=40
   \startStaff
   \relative c {
@@ -234,7 +234,7 @@
 
   %F
   \relative c {
-  \sectionLabel \markup { \box \concat { "prozessionen III" } }
+  \sectionLabel \markup { \box \concat { "Prozessionen III" } }
   \set Staff.shortInstrumentName = \markup { \bold \right-column { "III " \line { "IV " } } }
   \tempo 4.= 105
   \override Staff.StaffSymbol.line-positions = #'(-8 0 8)
@@ -282,7 +282,7 @@
 
   %G
   \override Staff.StaffSymbol.line-positions = #'(4.5 -4.5)
-  \sectionLabel \markup { \box \concat { "rezitativ und pastorale" } }
+  \sectionLabel \markup { \box \concat { "Rezitativ und Pastorale" } }
   \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "III " } }
   \time 4/4 \tempo 4=98
   \startStaff
@@ -331,8 +331,6 @@
     \mark \markup {
       \bold \bracket \center-column {
 	\line {  "I, II, III, IV," }
-	\vspace #0.1
-	\line { "Moo Box" }
       }
     } \bar "||" \bh
   }
@@ -349,7 +347,7 @@
     }
   }
   \stopStaff \override Staff.StaffSymbol.line-positions = #'(-16 -8 0 8 16)
-  \sectionLabel \markup { \box \concat { "ländlichen funktion und struktur" } }
+  \sectionLabel \markup { \box \concat { "ländlichen Funktion und Struktur" } }
   \cadenzaOn
   \startStaff
   \relative c' {

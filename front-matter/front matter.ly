@@ -14,14 +14,14 @@ front-matter = \markuplist {
      \fill-line {
        \column { \null }
        \left-column {
-	 \line { "rezitativ und pastorale" }
-	 \line { "prozessionen I" }
-	  \line { "pastorale und rezitativ" }
-	  \line { "prozessionen II" }
-	  \line { "pastorale und rezitativ" }
-	  \line { "prozessionen III" }
-	  \line { "rezitativ und pastorale" }
-	  \line { "ländlichen funktion und struktur" }
+	 \line { "Rezitativ und Pastorale" }
+	 \line { "Prozessionen I" }
+	  \line { "Pastorale und Rezitativ" }
+	  \line { "Prozessionen II" }
+	  \line { "Pastorale und Rezitativ" }
+	  \line { "Prozessionen III" }
+	  \line { "Rezitativ und Pastorale" }
+	  \line { "ländlichen Funktion und Struktur" }
 	}
 	\column { \null }
         }
@@ -46,8 +46,8 @@ front-matter = \markuplist {
 	  }
 	  \vspace #1
 	  \override #'(line-width . 100) \justify {
-	    Groups I-IV will corespond to the staff numbering in the score.
-	    Notehead locations within the number staves are to be interpreted as high and lower bells within their respenctive group, outlining the contours to be played n each group.
+	    Groups I-IV will correspond to the staff numbering in the score.
+	    Notehead locations within the number staves are to be interpreted as high and lower bells within their respective group, outlining the contours to be played in each group.
 	  }
 	  \vspace #1
 	  \line { \small \musicglyph "scripts.ushortfermata" " - a very short pause, meant to break up the continuous pulse but not to have any significant duration."}
