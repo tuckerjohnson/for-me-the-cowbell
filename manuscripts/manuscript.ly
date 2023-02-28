@@ -275,7 +275,7 @@
   <g' a'>4. <b a'>8 f'4 |
   <b, f'>4 <c, f'>8 r8\stopTextSpan \tempo 4. = 120 <e f'>8 c''8 |
   <g, c'>4 <g c'>8 <e c''> <c c''> <b' c'>-+
-  \mark \markup { \center-column { \bracket \bold "I" \vspace #0.2 \line { \musicglyph "scripts.ufermata" }  } }
+  \mark \markup { \center-column { \bracket \bold "II" \vspace #0.2 \line { \musicglyph "scripts.ufermata" }  } }
   \bar "||" \bh
   \stopStaff
 }
@@ -283,7 +283,7 @@
   %G
   \override Staff.StaffSymbol.line-positions = #'(4.5 -4.5)
   \sectionLabel \markup { \box \concat { "Rezitativ und Pastorale" } }
-  \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "III " } }
+  \stopStaff \set Staff.shortInstrumentName = \markup { \bold \right-column { "II " } }
   \time 4/4 \tempo 4=98
   \startStaff
   \relative c
